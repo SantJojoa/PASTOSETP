@@ -6,7 +6,7 @@
     $email=$_POST['email'];
     $password=$_POST['pass'];
     $phone=$_POST['phone'];
-    $sql="insert into admin(N_Identificacion,Nombre(s),Apellidos,Email,Contraseña,Telefono) 
+    $sql="insert into admin (N_Identificacion,Nombre,Apellidos,Email,Contrasena,Telefono) 
         VALUES('$n_id','$name','$last_name','$email','$password','$phone')";
     if($conn->query($sql)===TRUE){
         echo"<scrip>alert('El administrador se registro correctamente')</script>";
