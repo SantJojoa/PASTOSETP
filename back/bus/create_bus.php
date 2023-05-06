@@ -5,7 +5,7 @@
     $rutas=$_POST['rutas'];
     $fabricante=$_POST['fabricante'];
     $modelo=$_POST['modelo'];
-    $sql="insert into bus(Id,Placa,Ruta,Fabricante,Modelo) 
+    $sql="insert into bus(id,placa,ruta,fabricante,modelo) 
         VALUES('$id','$placa','$rutas','$fabricante','$modelo')";
     if($conn->query($sql)===TRUE){
         echo"<script>alert('El bus se registro correctamente')</script>";
