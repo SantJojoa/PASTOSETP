@@ -9,7 +9,8 @@
     $sql="insert into admin (N_Identificacion,Nombre,Apellidos,Email,Contrasena,Telefono) 
         VALUES('$n_id','$name','$last_name','$email','$password','$phone')";
     if($conn->query($sql)===TRUE){
-        echo"<scrip>alert('El administrador se registro correctamente')</script>";
+        echo"<script>alert('El administrador se registro correctamente')</script>";
+        header("refresh:0;url=http://localhost/PASTOSETP/front/create_admin.html");
     }else{
         echo"<script>alert('El administrador no se pudo registrar de manera correcta')</script>";
     }

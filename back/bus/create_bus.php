@@ -2,12 +2,14 @@
     include("../config/cnx_db.php");
     $id=$_POST['id'];
     $placa=$_POST['placa'];
+    $rutas=$_POST['rutas'];
     $fabricante=$_POST['fabricante'];
     $modelo=$_POST['modelo'];
-    $sql="insert into bus(Id,Placa,Fabricante,Modelo) 
-        VALUES('$id','$placa','$fabricante','$modelo')";
+    $sql="insert into bus(Id,Placa,Ruta,Fabricante,Modelo) 
+        VALUES('$id','$placa','$rutas','$fabricante','$modelo')";
     if($conn->query($sql)===TRUE){
-        echo"<scrip>alert('El bus se registro correctamente')</script>";
+        echo"<script>alert('El bus se registro correctamente')</script>";
+        header("refresh:0;url=http://localhost/PASTOSETP/front/create_bus.html");
     }else{
         echo"<script>alert('El bus no se pudo registrar de manera correcta')</script>";
     }
