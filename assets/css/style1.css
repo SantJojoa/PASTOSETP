@@ -11,7 +11,7 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
-    background :  #E54F10; 
+    background :  #1d242d; 
 }
 
 .container{
@@ -113,9 +113,13 @@ form .fields .input-field{
 }
 
 form button:hover{
-    background-color: #d84100;
+    background-color: #1d242d;
 }
 
 form button i{
     margin: 0 6px;
+}
+
+.go_back{
+    color: #E54F10;
 }
