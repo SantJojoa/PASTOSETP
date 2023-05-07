@@ -11,7 +11,7 @@ body  {
   display: flex;
   justify-content: center;
   align-items: center;
-  background: #4b4b4b;;
+  background: #1d242d;;
   height: 100vh;
 }
 
@@ -21,7 +21,7 @@ body  {
   display: flex;
   flex-direction: column;
   border-radius: 30px;
-  box-shadow: 0 0 2em #ff7b00;
+  box-shadow: 0 0 2em #1d242d;
   gap: 2em;
 }
 .screen-1 .logo {
