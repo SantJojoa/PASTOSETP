@@ -4,30 +4,70 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="PASTOSEPT" href="../assets/img/sept - icono.png">
-    <link rel="PASTOSEPT icon" type="image/x-icon" href="../assets/img/sept - icono.png">
-    <link rel="stylesheet" href="../assets/css/bootstrap.min.css">
-    <link rel="stylesheet" href="../assets/css/templatemo.css">
-    <link rel="stylesheet" href="../assets/css/custom.css">
-    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
-    <link rel='stylesheet' href='https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap'><link rel="stylesheet" href="../assets/css/style.css">
-    
     <title>Registrar Bus | PASTOSETP</title>
+    <link rel="stylesheet" href="../css/style.css">
 </head>
 <body>
-<div class="screen-1">
-    <h1>Registrar Bus</h1>
+
+    <div class="container"> <!-- Creamos un grupo clase container-->
+        <header>Registrar</header> 
+        <form action="http://localhost/PASTOSETP/back/bus/create_bus.php" method="post">
+            <div class="form first">
+                <div class="details personal">
+                    <span class="title">Registrar Bus</span>
+                    <div class="fields">
+
+                        <div class="input-field">
+                            <label>ID Bus:</label>
+                            <input type="text" name="id" placeholder="Ingrese el ID del Bus" required> 
+                        </div>
+
+                        <div class="input-field">
+                            <label>Placa:</label>
+                            <input type="text" name="placa" placeholder="Ingrese la Placa del Bus" required> 
+                        </div>
+
+                        <div class="input-field">
+                            <label>Rutas:</label>
+                            <input type="text" name="rutas" placeholder="C2,E4,C12" required> 
+                        </div>
+
+                        <div class="input-field">
+                            <label>Fabricante:</label>
+                            <input type="text" name="fabricante" placeholder="Ingrese el Fabricante del Bus" required> 
+                        </div>
+
+                        <div class="input-field">
+                            <label>Modelo:</label>
+                            <input type="text" name="modelo" placeholder="Ingrese el Modelo del Bus" required> 
+                        </div>
+
+                    
+                    </div>
+
+                    <button class="subbmit">
+                        <span class="btn_text">Registrar Bus</span>
+                        <i class="uil uil-navigator"></i>
+                    </button>
+
+                </div>
+            </div>
+        </form>
+    </div>
+<!--
+<center><h1>Registrar Bus</h1></center> <br>
     <form name="NewBusForm" action="http://localhost/PASTOSETP/back/bus/create_bus.php" method="post">
     <center>
-        <label for="">Id</label> <br> <input type="text"  class="form-control mt-1" name="id" placeholder="0000" required> <br>
-        <label for="">Placa</label> <br> <input type="text"  class="form-control mt-1" name="placa" id="" placeholder="AUW328"> <br>
-        <label for="">Ruta(s)</label><br><input type="text"  class="form-control mt-1" name="rutas" placeholder="C2,E4,C12"><br>
-        <label for="">Fabricante</label> <br> <input type="text"  class="form-control mt-1" name="fabricante" id="" placeholder="Chevrolet"> <br>
-        <label for="">Modelo</label><br><input type="text"  class="form-control mt-1" name="modelo" id="" placeholder="2023"> <br><br>
-        <button class="login">Registrar Bus</button>
+        <label for="">Id</label> <br> <input type="text" name="id" placeholder="0000" required> <br>
+        <label for="">Placa</label> <br> <input type="text" name="placa" id="" placeholder="AUW328"> <br>
+        <label for="">Ruta(s)</label><br><input type="text" name="rutas" placeholder="C2,E4,C12"><br>
+        <label for="">Fabricante</label> <br> <input type="text" name="fabricante" id="" placeholder="Chevrolet"> <br>
+        <label for="">Modelo</label><br><input type="text" name="modelo" id="" placeholder="2023"> <br><br>
+        <button>Registrar Bus</button>
     </center>
-
     </form>
+-->
+
+    
 </body>
 </html>

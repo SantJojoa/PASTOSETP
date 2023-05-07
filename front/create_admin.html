@@ -4,32 +4,76 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="PASTOSEPT" href="../assets/img/sept - icono.png">
-    <link rel="PASTOSEPT icon" type="image/x-icon" href="../assets/img/sept - icono.png">
-    <link rel="stylesheet" href="../assets/css/bootstrap.min.css">
-    <link rel="stylesheet" href="../assets/css/templatemo.css">
-    <link rel="stylesheet" href="../assets/css/custom.css">
-
-    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
-    <link rel='stylesheet' href='https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap'><link rel="stylesheet" href="../assets/css/style.css">
-
-    <title>Registrar Admin | PASTOSETP</title>
+    <title>Registrar Administrador | PASTOSETP</title> 
+    <link rel="stylesheet" href="../css/style.css">
 </head>
 <body>
-<div class="screen-1">
-    <h1>Registrar Admin</h1>
+
+    <div class="container"> <!-- Creamos un grupo clase container-->
+        <header>Registrar</header> 
+        <form action="http://localhost/PASTOSETP/back/admin/create_admin.php" method="post">
+            <div class="form first">
+                <div class="details personal">
+                    <span class="title">Registrar Administrador</span>
+                    <div class="fields">
+
+                        <div class="input-field">
+                            <label>Numero de Identificacion:</label>
+                            <input type="text" name="n_id" placeholder="Ingrese su Cedula" required> 
+                        </div>
+
+                        <div class="input-field">
+                            <label>Nombre(s):</label>
+                            <input type="text" name="name" placeholder="Ingrese su Nombre" required> 
+                        </div>
+
+                        <div class="input-field">
+                            <label>Apellidos:</label>
+                            <input type="text" name="last_name" placeholder="Ingrese sus Apellidos" required> 
+                        </div>
+
+                        <div class="input-field">
+                            <label>Correo Electronico:</label>
+                            <input type="email" name="email" placeholder="Ingrese su Email" required> 
+                        </div>
+
+                        <div class="input-field">
+                            <label>Contraseña:</label>
+                            <input type="password" name="pass" placeholder="********" required> 
+                        </div>
+
+                        <div class="input-field">
+                            <label>Numero de Telefono::</label>
+                            <input type="text" name="phone" placeholder="Ingresa su Telefono" required> 
+                        </div>
+
+                    </div>
+
+                    <button class="subbmit">
+                        <span class="btn_text">Registrar Administrador</span>
+                        <i class="uil uil-navigator"></i>
+                    </button>
+
+                </div>
+            </div>
+        </form>
+    </div>
+
+     <!-- <center><h1>Registrar Administrador</h1></center>-->
+     <!--
     <form name="NewAdminForm" action="http://localhost/PASTOSETP/back/admin/create_admin.php" method="post">
         <center>
-            <label for="">Numero de Identificacion:</label><br> <input type="text" class="form-control mt-1" name="n_id" placeholder="1111111111" required> <br>
-            <label for="">Nombre(s):</label><br> <input type="text" class="form-control mt-1" name="name" placeholder="Tom" required> <br>
-            <label for="">Apellidos:</label> <br> <input type="text" class="form-control mt-1" name="last_name" placeholder="Pantoja" required> <br>
-            <label for="">Email:</label> <br> <input type="email" class="form-control mt-1" name="email" placeholder="tompantoja@example.com" required> <br>
-            <label for="">Contraseña:</label> <br> <input type="password" class="form-control mt-1" name="pass" placeholder="********" required> <br>
-            <label for="">Telefono:</label> <br> <input type="text" class="form-control mt-1" name="phone" placeholder="313000000" required> <br><br>
-            <button class="login">REGISTRAR</button> 
+          
+            
+            <label for="">Nombre(s):</label><br> <input type="text" name="name" placeholder="Tom" required> <br>
+            <label for="">Apellidos:</label> <br> <input type="text" name="last_name" placeholder="Pantoja" required> <br>
+            <label for="">Email:</label> <br> <input type="email" name="email" placeholder="tompantoja@example.com" required> <br>
+            <label for="">Contraseña:</label> <br> <input type="password" name="pass" placeholder="********" required> <br>
+            <label for="">Telefono:</label> <br> <input type="text" name="phone" placeholder="313000000" required> <br><br>
+           <button>Registrar</button>
         </center>
 
     </form>
+    -->
 </body>
 </html>
