@@ -72,6 +72,15 @@ form .fields .input-field{
     flex-direction: column;
     margin: 4px 0;
 }
+
+form.fields_bus{
+
+    display: flex;
+    width: calc(100%/2 - 15px);
+    flex-direction: column;
+    margin: 4px 0;
+
+}
  
 .input-field label{
     font-size: 12px;
@@ -86,7 +95,7 @@ form .fields .input-field{
     color: #333;
     border-radius: 5px;
     border: 1px solid #aaa;
-    padding: 0 15px;
+    padding: 0 15px; 
     height: 42px;
     margin: 8px 0;
 }

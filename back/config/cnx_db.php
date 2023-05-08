@@ -13,6 +13,6 @@
         die("Connection failed: ".$conn->connect_error);
     exit();
 } else{
-    echo"Connection succesfully";
+   // echo"Connection succesfully";
 }
 ?>  
