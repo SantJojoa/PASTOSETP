@@ -6,10 +6,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>List Recorrido</title>
-    <link rel="stylesheet" href="../styles/styles.css">
+    <link rel="stylesheet" href="../../assets/css/style1.css">
 </head>
 <body> 
-    <table align="center"  border="3">
+
+    <div class="container">
+    <table>
         <tr >
             <th>Id</th>
             <th>cod</th>
@@ -43,5 +45,8 @@
             }
         ?>
     </table>
+
+    </div>
+    
 </body>
 </html>

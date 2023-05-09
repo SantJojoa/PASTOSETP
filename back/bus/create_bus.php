@@ -1,4 +1,5 @@
 <?php
+//Mensaje de error sql 
     include("../config/cnx_db.php");
     $id=$_POST['id'];
     $placa=$_POST['placa'];
@@ -9,7 +10,7 @@
         VALUES('$id','$placa','$rutas','$fabricante','$modelo')";
     if($conn->query($sql)===TRUE){
         echo"<script>alert('El bus se registro correctamente')</script>";
-        header("refresh:0;url=http://localhost/PASTOSETP/front//create/create_bus.html");
+        header("refresh:0;url=http://localhost/PASTOSETP/front/create/create_bus.html");
     }else{
         echo"<script>alert('El bus no se pudo registrar de manera correcta')</script>";
     }

@@ -1,7 +1,6 @@
 <?php
     include("../config/cnx_db.php");
-    
-
+  //  include("list_admin.php");
     $n_id=$_POST['n_id'];
     $name=$_POST['name'];
     $last_name=$_POST['last_name'];
@@ -11,15 +10,16 @@
 
     $sql=
         "UPDATE 
-            admin 
+            admin
         SET 
             n_id='$n_id',
             name='$name',
             last_name='$last_name',
             email='$email',
-            password='$password'
+            password='$password',
+            phone='$phone'
         WHERE
-            id='$n_id'";
+            n_id='$n_id'";
 
     if($conn->query($sql)===TRUE){
         echo"<script>alert('El administrador se Actualizo correctamente')</script>";

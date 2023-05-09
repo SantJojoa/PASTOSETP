@@ -22,11 +22,11 @@
 
     if($conn->query($sql)===TRUE){
         echo"<script>alert('El Bus se Actualizo correctamente')</script>";
-        header("refresh:0;url=http://localhost/PASTOSETP/back/admin/list_admin.php");
+        header("refresh:0;url=http://localhost/PASTOSETP/back/bus/list_bus.php");
     
     } else {
         echo"<script>alert('El Bus no se pudo Actualizar de manera correcta')</script>";
-        header("refresh:0;url=http://localhost/PASTOSETP/back/admin/list_admin.php");
+        header("refresh:0;url=http://localhost/PASTOSETP/back/bus/list_bus.php");
     
     }
 

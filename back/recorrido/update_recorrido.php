@@ -1,8 +1,8 @@
 <?php
     include("../config/cnx_db.php");
-    
 
-    $id=$_POST['id'];
+    //NO FUNCIONA
+    $id=$_POST['id']; 
     $cod=$_POST['cod'];
     $p1=$_POST['p1'];
     $p2=$_POST['p2'];

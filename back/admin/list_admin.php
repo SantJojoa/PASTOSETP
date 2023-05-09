@@ -1,4 +1,5 @@
 <?php include("../config/cnx_db.php"); ?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -6,10 +7,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>List Admin</title>
-    <link rel="stylesheet" href="../styles/styles.css">
+    <link rel="stylesheet" href="../../assets/css/style1.css">
 </head>
 <body> 
-    <table align="center"  border="3">
+    <div class="container">
+    <table class="table">
         <tr >
             <th>Identificacion</th>
             <th>First name</th>
@@ -30,7 +32,7 @@
                             <td>".$row['email']."</td>
                             <td>".$row['password']."</td>
                             <td>".$row['phone']."</td>
-                            <td><a href='edit_admin.php?id=".$row['id']."'><img src='../../assets/icons/update.png'  width=30px></a> &nbsp;
+                            <td><a href='http://localhost/PASTOSETP/back/admin/edit_admin.php?id=".$row['id']."'><img src='../../assets/icons/update.png'  width=30px></a> &nbsp;
                                 <a href='delete_admin.php?id_b=".$row['id']."'><img src='../../assets/icons/delete.png' width=30px></a></td>
                         </tr>";
 
@@ -39,5 +41,7 @@
             }
         ?>
     </table>
+    </div>
+    
 </body>
 </html>

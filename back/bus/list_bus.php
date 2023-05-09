@@ -6,16 +6,18 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>List Users</title>
-    <link rel="stylesheet" href="../styles/styles.css">
+    <link rel="stylesheet" href="../../assets/css/style1.css">
 </head>
 <body> 
-    <table align="center"  border="3">
-        <tr >
-            <th>Placa</th>
-            <th>Ruta</th>
-            <th>Fabricante</th>
-            <th>Modelo</th>
-            <th>..</th>
+    <div class="container">
+        
+        <table class="table">
+        <tr class="files">
+            <th class="files">Placa</th>
+            <th class="files">Ruta</th>
+            <th class="files">Fabricante</th>
+            <th class="files">Modelo</th>
+            <th class="files">..</th>
         </tr>
         <?php
             $sql="SELECT * from bus";
@@ -36,5 +38,9 @@
             }
         ?>
     </table>
+        
+    
+    </div>
+    
 </body>
 </html>
