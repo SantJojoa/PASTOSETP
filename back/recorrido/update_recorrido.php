@@ -15,20 +15,20 @@
         "UPDATE 
             recorrido
         SET 
-            id='$id',
+            
             cod='$cod',
             p1='$p1',
             p2='$p2',
             p3='$p3',
             p4='$p4',
             p5='$p5',
-            p6='$p6',
+            p6='$p6'
         WHERE
             id='$id'";
 
     if($conn->query($sql)===TRUE){
         echo"<script>alert('El Recorrido se Actualizo correctamente')</script>";
-        header("refresh:0;url=http://localhost/PASTOSETP/back/admin/list_admin.php");
+        header("refresh:0;url=http://localhost/PASTOSETP/back/recorrido/list_recorrido.php");
     
     } else {
         echo"<script>alert('El Recorrido no se pudo Actualizar de manera correcta')</script>";

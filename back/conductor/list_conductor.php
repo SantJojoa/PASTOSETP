@@ -7,6 +7,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>List Conductor</title>
     <link rel="stylesheet" href="../../assets/css/style1.css">
+
+        
+    <link rel="PASTOSEPT" href="../../assets/img/sept - icono.png">
+    <link rel="PASTOSEPT icon" type="image/x-icon" href="../../assets/img/sept - icono.png">
 </head>
 <body> 
 
@@ -27,7 +31,7 @@
                 while($row=$result->fetch_assoc()){
                     echo"<tr>
                             <td>".$row['n_id']."</td>
-                            <td>".$row['names']."</td>
+                            <td>".$row['name']."</td>
                             <td>".$row['last_name']."</td>
                             <td>".$row['age']."</td>
                             <td><a href='edit_conductor.php?id=".$row['id']."'><img src='../../assets/icons/update.png'  width=30px></a> &nbsp;
@@ -39,6 +43,7 @@
             }
         ?>
     </table>
+    <br><br> <a href="http://localhost/pastosetp/front/config.html">Volver al Menu Anterior</a>
 
     </div>
     

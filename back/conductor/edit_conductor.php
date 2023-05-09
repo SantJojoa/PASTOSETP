@@ -6,8 +6,9 @@
     $result=$conn->query($sql);
     if($result->num_rows > 0){
         while($row=$result->fetch_assoc()){
+            $id=$row['id'];
             $n_id=$row['n_id'];
-            $name=$row['names'];
+            $name=$row['name'];
             $last_name=$row['last_name'];
             $age=$row['age'];
 
@@ -35,6 +36,12 @@
                 <div class="details personal">
                     <span class="title">Actualizar Conductor</span>
                     <div class="fields">
+
+                        
+                        
+                            
+                            <input type="hidden" name="id" placeholder="Ingrese su Cedula" value="<?php echo $id; ?>" required> 
+                       
 
                         <div class="input-field">
                             <label>Documento de Identificacion:</label>

@@ -1,8 +1,7 @@
 <?php
     include("../config/cnx_db.php");
-    $id_bus=$_GET['id'];
-    $placa=$_POST['placa'];
-    $sql="DELETE FROM bus WHERE placa='$placa '";
+    $id_bus=$_GET['id_b'];
+    $sql="DELETE FROM bus WHERE id='$id_bus'";
     if($conn->query($sql)===TRUE){
         echo"<script>alert('El Bus se elimino correctamente')</script>";
         header("refresh:0;url=http://localhost/PASTOSETP/back/bus/list_bus.php");

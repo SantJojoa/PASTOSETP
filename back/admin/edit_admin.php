@@ -22,7 +22,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> Administrador | PASTOSETP</title> 
+    <title> Editar Admin | PASTOSETP</title> 
     <link rel="stylesheet" href="../../assets/css/style1.css">
     <link rel="PASTOSEPT" href="../../assets/img/sept - icono.png">
     <link rel="PASTOSEPT icon" type="image/x-icon" href="../../assets/img/sept - icono.png">

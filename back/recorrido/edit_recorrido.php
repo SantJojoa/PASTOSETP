@@ -1,3 +1,4 @@
+
 <?php
     include("../config/cnx_db.php");
     $id_recorrido=$_GET['id'];
@@ -39,6 +40,8 @@
                         <span class="title">Actualizar Recorrido</span>
                         <div class="fields">
     
+                                <input type="hidden" name="id" value="<?php echo $id; ?>" required> 
+                            
                             <div class="input-field">
                                 <label>Codigo de Recorrido:</label>
                                 <input type="text" name="cod" placeholder="Ingrese el Codigo del Recorrido" value="<?php echo $cod; ?>" required> 

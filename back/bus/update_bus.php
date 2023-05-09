@@ -1,7 +1,6 @@
 <?php
     include("../config/cnx_db.php");
     
-
     $id=$_POST['id'];
     $placa=$_POST['placa'];
     $rutas=$_POST['rutas'];

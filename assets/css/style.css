@@ -93,7 +93,7 @@ body  {
 }
 .screen-1 .login {
   padding: 1em;
-  background: #ff7b00;
+  background: #ff7b00; 
   color: white;
   border: none;
   border-radius: 30px;
@@ -110,6 +110,24 @@ body  {
   cursor: pointer;
 }
 
-button {
+button .login{
+  cursor: pointer;
+}
+
+ .screen-1 button .login{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 45px;
+  max-width: 200px;
+  width: 100%;
+  border: none;
+  outline: none;
+  font-weight: 500;
+  color: black;
+  border-radius: 5px;
+  margin: 25px 0;
+  background-color: #E54F10;
+  transition: all 0.3s linear;
   cursor: pointer;
 }
