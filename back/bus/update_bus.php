@@ -21,9 +21,13 @@
             id='$id'";
 
     if($conn->query($sql)===TRUE){
-        echo "Bus Actualizado";
+        echo"<script>alert('El Bus se Actualizo correctamente')</script>";
+        header("refresh:0;url=http://localhost/PASTOSETP/back/admin/list_admin.php");
+    
     } else {
-        echo "error";
+        echo"<script>alert('El Bus no se pudo Actualizar de manera correcta')</script>";
+        header("refresh:0;url=http://localhost/PASTOSETP/back/admin/list_admin.php");
+    
     }
 
 ?>

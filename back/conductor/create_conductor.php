@@ -8,7 +8,7 @@
      VALUES('$id','$name','$l_name','$age')";
  if($conn->query($sql)===TRUE){
      echo"<script>alert('El conductor se registro correctamente')</script>";
-     header("refresh:0;url=http://localhost/PASTOSETP/front/create_conductor.html");
+     header("refresh:0;url=http://localhost/PASTOSETP/front/create/create_conductor.html");
  }else{
      echo"<script>alert('El bus no se pudo registrar de manera correcta')</script>";
  }

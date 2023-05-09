@@ -1,14 +1,14 @@
 <?php
     include("../config/cnx_db.php");
-    $id_bus=$_GET['id'];
+    $id_recorrido=$_GET['id'];
 
-    $sql="DELETE FROM bus WHERE id='$id_bus'";
+    $sql="DELETE FROM recorrido WHERE id='$id_recorrido'";
     if($conn->query($sql)===TRUE){
-        echo"<script>alert('El Bus se elimino correctamente')</script>";
+        echo"<script>alert('El Recorrido se elimino correctamente')</script>";
         header("refresh:0;url=http://localhost/PASTOSETP/back/admin/list_admin.php");
     
     } else{
-        echo"<script>alert('El Bus no se pudo elimino de manera correcta')</script>";
+        echo"<script>alert('El recorrido no se pudo eliminar de manera correcta')</script>";
         header("refresh:0;url=http://localhost/PASTOSETP/back/admin/list_admin.php");
     
     }

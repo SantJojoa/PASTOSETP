@@ -11,7 +11,7 @@
         VALUES('$cod','$p1','$p2','$p3','$p4','$p5','$p6')";
     if($conn->query($sql)===TRUE){
         echo"<script>alert('El recorrido se registro correctamente')</script>";
-        header("refresh:0;url=http://localhost/PASTOSETP/front/create_recorrido.html");
+        header("refresh:0;url=http://localhost/PASTOSETP/front/create/create_recorrido.html");
     }else{
         echo"<script>alert('El bus no se pudo registrar de manera correcta')</script>";
     }
