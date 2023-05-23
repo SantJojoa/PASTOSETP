@@ -1,5 +1,4 @@
 <?php
-//Mensaje de error sql 
     include("../config/cnx_db.php");
     $id=$_POST['id'];
     $placa=$_POST['placa'];

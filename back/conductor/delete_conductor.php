@@ -14,3 +14,4 @@
         header("refresh:0;url=http://localhost/PASTOSETP/back/admin/list_admin.php");
     
     }
+?>

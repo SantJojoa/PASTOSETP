@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crear PQR|PASTOSETP</title>
+    <link rel="stylesheet" href="../../assets/css/style1.css">
+    <link rel="PASTOSEPT" href="../../assets/img/sept - icono.png">
+    <link rel="PASTOSEPT icon" type="image/x-icon" href="../../assets/img/sept - icono.png">
+</head>
+<body>
+    <div class="container"> <!-- Creamos un grupo clase container-->
+        <header>Registrar</header> 
+        <form action="http://localhost/PASTOSETP/back/pqr/create_pqr.php" method="post">
+            <div class="form first">
+                <div class="details personal">
+                    <span class="title">Registrar PQR</span>
+                    <div class="fields">
+
+                        <div class="input-field">
+                            <label>Cedula:</label>
+                            <input type="text" name="ced" placeholder="Ingrese su cedula" required> 
+                        </div>
+
+                        <div class="input-field">
+                            <label>Nombre:</label>
+                            <input type="text" name="name" placeholder="Ingrese su Nombre" required> 
+                        </div>
+
+                        <div class="input-field">
+                            <label>Placa:</label>
+                            <input type="text" name="placa" placeholder="Ingrese la Placa del bus" required> 
+                        </div>
+
+                        <div class="input-field">
+                            <label>Asunto:</label>
+                            <input type="text" name="issue" placeholder="Ingrese el asunto de su PQR" required> 
+                        </div>
+
+                        <div class="input-field">
+                            <label>Describa su PQR:</label>
+                            <input type="text" name="pqr" placeholder="Ingrese Detalladamente su PQR" required> 
+                        </div>
+
+                        <div class="input-field">
+                            <label>Telefono:</label>
+                            <input type="text" name="phone" placeholder="Ingrese su Telefono" required> 
+                        </div>
+                        
+                    </div>
+
+                    <button class="subbmit">
+                        <span class="btn_text">Registrar PQR</span>
+                        <i class="uil uil-navigator"></i>
+                    </button>
+                </div>
+            </div>
+        </form>
+        <a class="go_back" href="http://localhost/PASTOSETP/">Ir al la Pagina Principal</a>
+    </div>
+</body>
+</html>
