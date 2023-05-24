@@ -1,4 +1,10 @@
-<?php include("../config/cnx_db.php"); ?>
+<?php 
+    include("../config/cnx_db.php"); 
+    session_start();
+    if(!isset($_SESSION["id_usuario"])){
+    header("Location: http://localhost/pastosetp/front/login.php");
+}
+?>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -14,6 +20,7 @@
 </head>
 <body> 
     <div class="container">
+        
     <table class="table">
         <tr >
             <th>Identificacion</th>
@@ -44,7 +51,10 @@
             }
         ?>
     </table>
-            <br><br> <a href="http://localhost/pastosetp/front/config.html">Volver al Menu Anterior</a>
+            <br>
+            <a href="http://localhost/pastosetp/front/create/create_admin.html">Añadir Administrador</a>
+            <br> 
+            <a href="http://localhost/pastosetp/indexadmin.html">Volver al Menu Anterior</a>
 
     </div>
     

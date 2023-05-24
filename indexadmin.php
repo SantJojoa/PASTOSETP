@@ -1,3 +1,10 @@
+<?php
+session_start();
+if(!isset($_SESSION["id_usuario"])){
+    header("Location: http://localhost/pastosetp/front/login.php");
+}
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -55,16 +62,26 @@
                 <div class="flex-fill">
                     <ul class="nav navbar-nav d-flex justify-content-between mx-lg-auto">
                         <li class="nav-item">
-                            <a class="nav-link" href="http://localhost/PASTOSETP/index.html">HOME</a>
+                            <a class="nav-link" href="http://localhost/PASTOSETP/index.html">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="http://localhost/PASTOSETP/front/serch.html">SERCH</a>
+                            <a class="nav-link" href="http://localhost/PASTOSETP/back/admin/list_admin.php">Administradores</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="http://localhost/PASTOSETP/front/create/create_page.html">CREATE</a>
+                            <a class="nav-link" href="http://localhost/PASTOSETP/back/bus/list_bus.php">Buses</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="http://localhost/PASTOSETP/back/recorrido/list_recorrido.php">Recorridos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="http://localhost/PASTOSETP/back/conductor/list_conductor.php">Conductores</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="http://localhost/PASTOSETP/front/config.html">CONFIG</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="http://localhost/PASTOSETP/back/config/sign_out.php">Cerrar Sesion</a>
                         </li>
 
                     </ul>

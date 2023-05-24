@@ -98,6 +98,8 @@ body  {
   border: none;
   border-radius: 30px;
   font-weight: 600;
+  cursor: pointer;
+  
 }
 .screen-1 .footer {
   display: flex;

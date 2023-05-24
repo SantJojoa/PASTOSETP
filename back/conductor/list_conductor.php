@@ -1,5 +1,9 @@
 <?php 
     include("../config/cnx_db.php"); 
+    session_start();
+    if(!isset($_SESSION["id_usuario"])){
+    header("Location: http://localhost/pastosetp/front/login.php");
+}
 ?>
 <!DOCTYPE html>
 <html lang="en">

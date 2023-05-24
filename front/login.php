@@ -1,3 +1,33 @@
+<?php
+  include("../back/config/cnx_db.php"); 
+  session_start(); //Crear Sesion
+
+  if(isset($_SESSION["id_usuario"])){
+      header("Location: http://localhost/pastosetp/indexadmin.php");
+  }
+
+  if(!empty($_POST)){
+    $rows = 0;
+
+    $email = $_POST['email'];
+    $pass = $_POST['pass'];
+    $error = '';
+
+    $sql = "SELECT * from admin WHERE email = '$email' and password = '$pass'";
+
+    $result = $conn->query($sql);
+    $rows = $result->num_rows;
+
+    if($rows > 0){
+      $row=$result->fetch_assoc();
+      $_SESSION['id_usuario']=$row['id'];
+      header("Location: http://localhost/pastosetp/indexadmin.php");
+    } else{
+      echo "Error";
+    }
+  }
+?>
+  
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -36,23 +66,24 @@
             <polygon style="stroke: rgb(0,0,0); stroke-width: 0; stroke-dasharray: none; stroke-linecap: butt; stroke-dashoffset: 0; stroke-linejoin: miter; stroke-miterlimit: 4; fill:rgb(255, 255, 255); ; fill-rule: nonzero; opacity: 1;" vector-effect="non-scaling-stroke" points="-50,-50 -50,50 50,50 50,-50 "></polygon>
           </g>
         </svg>
+        <form name="" action="<?php $_SERVER['PHP_SELF']; ?>" method="POST">
         <div class="email">
-          <label for="email">Email Ad</label>
+          <label for="email">Email</label>
           <div class="sec-2">
             <ion-icon name="mail-outline"></ion-icon>
-            <input type="email" name="email" placeholder="Username@gmail.com"/>
+            <input type="email" name="email" placeholder="example@admin.com"/>
           </div>
         </div>
         <div class="password">
-          <label for="password">Password</label>
+          <label for="password">Contraseña</label>
           <div class="sec-2">
             <ion-icon name="lock-closed-outline"></ion-icon>
             <input class="pas" type="password" name="pass" placeholder="············"/>
             <ion-icon class="show-hide" name="eye-outline"></ion-icon>
           </div>
         </div>
-        <form action="http://localhost/PASTOSETP/indexadmin.html">
-          <center><button class="login" >Login </button></center>
+          <br>
+          <center><button class="login" >Ingresar</button></center>
           <div class="footer"><s>
         </form>
 
