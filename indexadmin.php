@@ -61,9 +61,9 @@ if(!isset($_SESSION["id_usuario"])){
             <div class="align-self-center collapse navbar-collapse flex-fill  d-lg-flex justify-content-lg-between" id="templatemo_main_nav">
                 <div class="flex-fill">
                     <ul class="nav navbar-nav d-flex justify-content-between mx-lg-auto">
-                        <li class="nav-item">
+                    <!--    <li class="nav-item">
                             <a class="nav-link" href="http://localhost/PASTOSETP/index.html">Home</a>
-                        </li>
+                        </li>  -->
                         <li class="nav-item">
                             <a class="nav-link" href="http://localhost/PASTOSETP/back/admin/list_admin.php">Administradores</a>
                         </li>
@@ -76,12 +76,17 @@ if(!isset($_SESSION["id_usuario"])){
                         <li class="nav-item">
                             <a class="nav-link" href="http://localhost/PASTOSETP/back/conductor/list_conductor.php">Conductores</a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="http://localhost/PASTOSETP/front/config.html">CONFIG</a>
-                        </li>
 
                         <li class="nav-item">
-                            <a class="nav-link" href="http://localhost/PASTOSETP/back/config/sign_out.php">Cerrar Sesion</a>
+                            <a class="nav-link" href="http://localhost/PASTOSETP/back/pqr/list_pqr.php">PQR</a>
+                        </li>
+                        <!-- 
+                        <li class="nav-item">
+                            <a class="nav-link" href="http://localhost/PASTOSETP/front/config.html">CONFIG</a>
+                        </li> -->
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="http://localhost/PASTOSETP/back/config/sign_out.php">Salir</a>
                         </li>
 
                     </ul>
