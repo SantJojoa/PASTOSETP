@@ -13,6 +13,6 @@
         echo"<script>alert('El recorrido se registro correctamente')</script>";
         header("refresh:0;url=http://localhost/PASTOSETP/front/create/create_recorrido.html");
     }else{
-        echo"<script>alert('El bus no se pudo registrar de manera correcta')</script>";
+        echo"<script>alert('El recorrido no se pudo registrar de manera correcta')</script>";
     }
 ?>

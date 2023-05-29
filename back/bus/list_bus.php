@@ -11,7 +11,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>List Users</title>
+    <title>List bus</title>
     <link rel="stylesheet" href="../../assets/css/style1.css">
     <link rel="PASTOSEPT" href="../../assets/img/sept - icono.png">
     <link rel="PASTOSEPT icon" type="image/x-icon" href="../../assets/img/sept - icono.png">
@@ -37,7 +37,7 @@
                             <td>".$row['ruta']."</td>
                             <td>".$row['fabricante']."</td>
                             <td>".$row['modelo']."</td>
-                            <td><a href='edit_bus.php?id=".$row['id']."'><img src='../../assets/icons/update.png'  width=30px></a> &nbsp;
+                            <td><a href='card_bus.php?id=".$row['id']."'><img src='../../assets/icons/search.png'  width=30px></a> &nbsp;
                                 <a href='delete_bus.php?id_b=".$row['id']."'><img src='../../assets/icons/delete.png' width=30px></a></td>
                         </tr>";
 
@@ -46,9 +46,11 @@
             }
         ?>
     </table>
-        
-    <br><br> <a href="http://localhost/pastosetp/front/config.html">Volver al Menu Anterior</a>
-    
+            <br>
+            <a href="http://localhost/pastosetp/indexadmin.php">Volver</a> |
+            <a href="http://localhost/pastosetp/front/create/create_bus.html">Añadir</a> | 
+            <a href="http://localhost/pastosetp/back/bus/search_bus.php">Buscar</a>
+            <br> 
     </div>
     
 </body>

@@ -10,6 +10,6 @@
      echo"<script>alert('El conductor se registro correctamente')</script>";
      header("refresh:0;url=http://localhost/PASTOSETP/front/create/create_conductor.html");
     }else{
-     echo"<script>alert('El bus no se pudo registrar de manera correcta')</script>";
+     echo"<script>alert('El conductor no se pudo registrar de manera correcta')</script>";
     }
 ?>

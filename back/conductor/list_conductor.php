@@ -36,14 +36,16 @@
                             <td>".$row['name']."</td>
                             <td>".$row['last_name']."</td>
                             <td>".$row['age']."</td>
-                            <td><a href='edit_conductor.php?id=".$row['id']."'><img src='../../assets/icons/update.png'  width=30px></a> &nbsp;
+                            <td><a href='card_conductor.php?id=".$row['id']."'><img src='../../assets/icons/search.png'  width=30px></a> &nbsp;
                                 <a href='delete_conductor.php?id_b=".$row['id']."'><img src='../../assets/icons/delete.png' width=30px></a></td>
                         </tr>";
                 }                 
             }
     ?>
         </table>
-    <br><br> <a href="http://localhost/pastosetp/front/config.html">Volver al Menu Anterior</a>
+        <a href="http://localhost/pastosetp/indexadmin.php">Volver</a> |
+            <a href="http://localhost/pastosetp/front/create/create_conductor.html">Añadir</a> | 
+            <a href="http://localhost/pastosetp/back/conductor/search_conductor.php">Buscar</a>
     </div>
     
 </body>

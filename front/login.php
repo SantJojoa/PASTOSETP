@@ -23,7 +23,7 @@
       $_SESSION['id_usuario']=$row['id'];
       header("Location: http://localhost/pastosetp/indexadmin.php");
     } else{
-      echo "Error";
+
     }
   }
 ?>
@@ -85,8 +85,9 @@
         </div>
           <br>
           <center><button class="login" >Ingresar</button></center>
-          <div class="footer"><s>
+          <div class="footer"><s> <br><br>
         </form>
+        <center><a href="http://localhost/pastosetp/index.html">Volver</a></center>
 
 </body>
 </html>

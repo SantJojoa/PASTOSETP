@@ -80,11 +80,6 @@ if(!isset($_SESSION["id_usuario"])){
                         <li class="nav-item">
                             <a class="nav-link" href="http://localhost/PASTOSETP/back/pqr/list_pqr.php">PQR</a>
                         </li>
-                        <!-- 
-                        <li class="nav-item">
-                            <a class="nav-link" href="http://localhost/PASTOSETP/front/config.html">CONFIG</a>
-                        </li> -->
-
                         <li class="nav-item">
                             <a class="nav-link" href="http://localhost/PASTOSETP/back/config/sign_out.php">Salir</a>
                         </li>

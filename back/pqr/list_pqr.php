@@ -45,8 +45,6 @@
                             <td>".$row['asunto']."</td>
                             <td>".$row['pqr']."</td>
                             <td>".$row['telefono_user']."</td>
-                            <td><a href='http://localhost/PASTOSETP/back/admin/edit_admin.php?id=".$row['id']."'><img src='../../assets/icons/update.png'  width=30px></a> &nbsp;
-                                <a href='delete_admin.php?id_b=".$row['id']."'><img src='../../assets/icons/delete.png' width=30px></a></td>
                         </tr>";
 
                 } 
@@ -54,10 +52,9 @@
             }
         ?>
     </table>
-            <br>
-            <a href="http://localhost/pastosetp/front/create/create_admin.html">Añadir Administrador</a>
+            
             <br> 
-            <a href="http://localhost/pastosetp/indexadmin.html">Volver al Menu Anterior</a>
+            <a href="http://localhost/pastosetp/indexadmin.php">Volver al Menu Anterior</a>
 
     </div>
     

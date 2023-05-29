@@ -48,7 +48,7 @@
         ?>
     </table>
             <br>
-            <a href="http://localhost/pastosetp/indexadmin.html">Volver</a> |
+            <a href="http://localhost/pastosetp/indexadmin.php">Volver</a> |
             <a href="http://localhost/pastosetp/front/create/create_admin.html">Añadir</a> | 
 
             <a href="http://localhost/pastosetp/back/admin/search_admin.php">Buscar</a>
