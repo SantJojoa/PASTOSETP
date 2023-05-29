@@ -58,28 +58,19 @@
                 <div class="flex-fill">
                     <ul class="nav navbar-nav d-flex justify-content-between mx-lg-auto">
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Buscar Ruta</a>
-                        </li>
-                        <li class="nav-item">
                             <a class="nav-link" href="front/create/create_pqr.html">PQR</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="front/login.php">Administrador</a>
                         </li>
+                        <li class="nav-item">
+                            <a class="nav-icon d-none d-lg-inline" data-bs-toggle="modal" data-bs-target="#templatemo_search">
+                                
+                                <i class="fa fa-fw fa-search text-dark mr-2" >Buscar Ruta</i>
+                               <!--Buscar Ruta-->
+                            </a>
+                        </li>
                     </ul>
-                </div>
-                <div class="navbar align-self-center d-flex">
-                    <div class="d-lg-none flex-sm-fill mt-3 mb-4 col-7 col-sm-auto pr-3">
-                        <div class="input-group">
-                            <input type="text" class="form-control" id="inputMobileSearch" placeholder="Search ...">
-                            <div class="input-group-text">
-                                <i class="fa fa-fw fa-search"></i>
-                            </div>
-                        </div>
-                    </div>
-                    <a class="nav-icon d-none d-lg-inline" href="#" data-bs-toggle="modal" data-bs-target="#templatemo_search">
-                        <i class="fa fa-fw fa-search text-dark mr-2"></i>
-                    </a>
                 </div>
             </div>
 
@@ -95,17 +86,16 @@
             </div>
             <form action="" method="get" class="modal-content modal-body border-0 p-0">
                 <div class="input-group mb-2">
-                    <input type="text" class="form-control" id="inputModalSearch" name="q" placeholder="Search ...">
+                    <input type="text" class="form-control" id="inputModalSearch" name="q" placeholder="Ingresa tu destino">
                     <button type="submit" class="input-group-text bg-success text-light">
-                        <i class="fa fa-fw fa-search text-white"></i>
+                            <a class="nav-icon d-none d-lg-inline text-white" href="front/serch_user.php">
+                                Buscar
+                            </a>
                     </button>
                 </div>
             </form>
         </div>
     </div>
-
-
-
     <section class="bg-success py-5">
         <div class="container">
             <div class="row align-items-center py-5">
@@ -147,9 +137,9 @@
                <div class="col-md-4 pt-5">
                     <h2 class="h2 text-light border-bottom pb-3 border-light">Further Info</h2>
                     <ul class="list-unstyled text-light footer-link-list">
-                        <li><a class="text-decoration-none" href="#">Home</a></li>
-                        <li><a class="text-decoration-none" href="#">Login</a></li>
-                        <li><a class="text-decoration-none" href="#">Serch</a></li>
+                        <li><a class="text-decoration-none" href="#">PQR</a></li>
+                        <li><a class="text-decoration-none" href="#">Administrador</a></li>
+                        <li><a class="text-decoration-none" href="#">Buscar Ruta</a></li>
                     </ul>
                 </div>
 

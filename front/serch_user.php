@@ -15,7 +15,7 @@
 
     <!-- Load fonts style after rendering the layout styles -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;200;300;400;500;700;900&display=swap">
-    <link rel="stylesheet" href="assets/css/fontawesome.min.css">
+    <link rel="stylesheet" href="../assets/css/fontawesome.min.css">
 
     <!-- Load map styles -->
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A==" crossorigin="" />
@@ -46,7 +46,7 @@
     <nav class="navbar navbar-expand-lg navbar-light shadow">
         <div class="container d-flex justify-content-between align-items-center">
 
-            <a class="navbar-brand text-success logo h1 align-self-center" href="index.html" >
+            <a class="navbar-brand text-success logo h1 align-self-center" href="../index.html" >
                 <img src="../assets/img/logo.png" alt="SEPTPASTO" width="100%">
             </a>
 
@@ -58,65 +58,22 @@
                 <div class="flex-fill">
                     <ul class="nav navbar-nav d-flex justify-content-between mx-lg-auto">
                         <li class="nav-item">
-                            <a class="nav-link" href="../index.html">HOME</a>
+                            <a class="nav-link" href="../index.html">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="../front/login.html">LOGIN</a>
+                            <a class="nav-link" href="../front/create/create_pqr.html">PQR</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="serch.html">SERCH</a>
+                            <a class="nav-link" href="../front/login.php">Administrador</a>
                         </li>
                     </ul>
-                </div>
-                <div class="navbar align-self-center d-flex">
-                    <div class="d-lg-none flex-sm-fill mt-3 mb-4 col-7 col-sm-auto pr-3">
-                        <div class="input-group">
-                            <input type="text" class="form-control" id="inputMobileSearch" placeholder="Search ...">
-                            <div class="input-group-text">
-                                <i class="fa fa-fw fa-search"></i>
-                            </div>
-                        </div>
-                    </div>
-                    <a class="nav-icon d-none d-lg-inline" href="#" data-bs-toggle="modal" data-bs-target="#templatemo_search">
-                        <i class="fa fa-fw fa-search text-dark mr-2"></i>
-                    </a>
                 </div>
             </div>
 
         </div>
     </nav>
     <!-- Close Header -->
-
-    <!-- Modal -->
-    <div class="modal fade bg-white" id="templatemo_search" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog modal-lg" role="document">
-            <div class="w-100 pt-1 mb-5 text-right">
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-            </div>
-            <form action="" method="get" class="modal-content modal-body border-0 p-0">
-                <div class="input-group mb-2">
-                    <input type="text" class="form-control" id="inputModalSearch" name="q" placeholder="Search ...">
-                    <button type="submit" class="input-group-text bg-success text-light">
-                        <i class="fa fa-fw fa-search text-white"></i>
-                    </button>
-                </div>
-            </form>
-        </div>
-    </div>
-
-
-    <!-- Start Content Page -->
-        <div class="container-fluid bg-dark py-5">
-            <div class="col-md-6 m-auto text-center">
-                <h1 class="h1">SERCH</h1>
-                <p>
-                    Proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                </p>
-            </div>
-        </div>
-
-
-    <!-- Start Map -->
+        <!-- Start Map 
     <div id="mapid" style="width: 100%; height: 300px;"></div>
     <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js" integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA==" crossorigin=""></script>
     <script>
@@ -133,14 +90,49 @@
         }).addTo(mymap);
 
         L.marker([-23.013104, -43.394365, 13]).addTo(mymap)
-            .bindPopup("<b>PASTOSEPT</b> find your current location<br />Location.").openPopup();
+            .bindPopup("<b>PASTOSEPT</b> buscara tu mejor ruta para llegar a tu destino<br />.").openPopup();
 
         mymap.scrollWheelZoom.disable();
         mymap.touchZoom.disable();
     </script>
-    <!-- Ena Map -->
+     Ena Map -->
+    <!-- Modal -->
+    <div class="modal fade bg-white" id="templatemo_search" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="w-100 pt-1 mb-5 text-right">
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <form action="" method="get" class="modal-content modal-body border-0 p-0">
+                <div class="input-group mb-2">
+                    <input type="text" class="form-control" id="inputModalSearch" name="q" placeholder="Ingresa tu destino">
+                    <button type="submit" class="input-group-text bg-success text-light">
+                            <a class="nav-icon d-none d-lg-inline text-white" href="front/serch_user.html">
+                                Buscar
+                            </a>
+                    </button>
+                </div>
+            </form>
+        </div>
+    </div>
 
-    <!-- Start Contact -->
+    <section class="bg-success py-5">
+        <div class="container">
+            <div class="row align-items-center py-5">
+                <div class="col-md-8 text-white">
+                    <h1>BUSQUEDA DE RUTAS</h1>
+                    <p>
+                    -----------------------  
+                    </p>
+                </div>
+                <div class="col-md-4">
+                    <img src="../assets/img/Mi_proyecto_1.png" alt="SEPTPASTO" width="120%">
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Start Contact 
     <section class="bg-success py-5">
     <div class="container py-5">
         <div class="row py-5">
@@ -166,7 +158,7 @@
                 </div>
             </form>
         </div>
-    </div>
+    </div>-->
     </section>
     
     <!-- End Contact -->
@@ -195,8 +187,8 @@
                     <h2 class="h2 text-light border-bottom pb-3 border-light">Further Info</h2>
                     <ul class="list-unstyled text-light footer-link-list">
                         <li><a class="text-decoration-none" href="#">Home</a></li>
-                        <li><a class="text-decoration-none" href="#">Login</a></li>
-                        <li><a class="text-decoration-none" href="#">Serch</a></li>
+                        <li><a class="text-decoration-none" href="#">PQR</a></li>
+                        <li><a class="text-decoration-none" href="#">Administrador</a></li>
                     </ul>
                 </div>
 

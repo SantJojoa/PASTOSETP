@@ -87,7 +87,7 @@
             </div>
         </form>
         <button class="subbmit" onclick="toggleInput()">
-                        <span class="btn_text">Actualizar Bus</span>
+                        <span class="btn_text">Editar Bus</span>
                         <i class="uil uil-navigator"></i>
                     </button>
 

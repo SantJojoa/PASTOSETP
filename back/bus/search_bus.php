@@ -22,9 +22,8 @@
     <form action="search_bus.php" method="POST">
     <div class="container"> 
         <input type="text" name="id" placeholder="Ingrese Id bus:" required> 
-        <button>Buscar</button>
+        <button>Buscar</button><br><br>
         </form>
-        <br>
         
     <table class="table">    
         <tr >

@@ -23,9 +23,9 @@
     <form action="search_admin.php" method="POST">
     <div class="container"> 
         <input type="text" name="id" placeholder="Ingrese la cedula:" required> 
-        <button>Buscar</button>
+        <button>Buscar</button><br><br>
         </form>
-        <br>
+        
         
     <table class="table">    
         <tr >

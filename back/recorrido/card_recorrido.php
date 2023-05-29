@@ -103,7 +103,7 @@ $( ".lock" ).click(function() {
                 </div>
             </form>
             <button class="subbmit" onclick="toggleInput()">
-                        <span class="btn_text">Actualizar recorrido</span>
+                        <span class="btn_text">Editar recorrido</span>
                         <i class="uil uil-navigator"></i>
                     </button>
 

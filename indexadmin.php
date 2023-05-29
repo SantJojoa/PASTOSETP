@@ -50,7 +50,7 @@ if(!isset($_SESSION["id_usuario"])){
     <nav class="navbar navbar-expand-lg navbar-light shadow">
         <div class="container d-flex justify-content-between align-items-center">
 
-            <a class="navbar-brand text-success logo h1 align-self-center" href="http://localhost/PASTOSETP/indexadmin.html" >
+            <a class="navbar-brand text-success logo h1 align-self-center" href="http://localhost/PASTOSETP/indexadmin.php" >
                 <img src="./assets/img/logo.png" alt="SEPTPASTO" width="100%">
             </a>
 
@@ -61,9 +61,6 @@ if(!isset($_SESSION["id_usuario"])){
             <div class="align-self-center collapse navbar-collapse flex-fill  d-lg-flex justify-content-lg-between" id="templatemo_main_nav">
                 <div class="flex-fill">
                     <ul class="nav navbar-nav d-flex justify-content-between mx-lg-auto">
-                    <!--    <li class="nav-item">
-                            <a class="nav-link" href="http://localhost/PASTOSETP/index.html">Home</a>
-                        </li>  -->
                         <li class="nav-item">
                             <a class="nav-link" href="http://localhost/PASTOSETP/back/admin/list_admin.php">Administradores</a>
                         </li>
@@ -80,12 +77,11 @@ if(!isset($_SESSION["id_usuario"])){
                         <li class="nav-item">
                             <a class="nav-link" href="http://localhost/PASTOSETP/back/pqr/list_pqr.php">PQR</a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="http://localhost/PASTOSETP/back/config/sign_out.php">Salir</a>
-                        </li>
-
                     </ul>
                 </div>
+                        <li class="nav-item">
+                            <a class="" href="http://localhost/PASTOSETP/back/config/sign_out.php">Cerrar Sesion</a>
+                        </li>
             </div>
 
         </div>
@@ -155,9 +151,12 @@ if(!isset($_SESSION["id_usuario"])){
                <div class="col-md-4 pt-5">
                     <h2 class="h2 text-light border-bottom pb-3 border-light">Further Info</h2>
                     <ul class="list-unstyled text-light footer-link-list">
-                        <li><a class="text-decoration-none" href="#">Home</a></li>
-                        <li><a class="text-decoration-none" href="#">Login</a></li>
-                        <li><a class="text-decoration-none" href="#">Serch</a></li>
+                        <li><a class="text-decoration-none" href="#">Administrador</a></li>
+                        <li><a class="text-decoration-none" href="#">Buses</a></li>
+                        <li><a class="text-decoration-none" href="#">Recorridos</a></li>
+                        <li><a class="text-decoration-none" href="#">Conductores</a></li>
+                        <li><a class="text-decoration-none" href="#">PQR</a></li>
+                        <li><a class="text-decoration-none" href="#">Cerrar sesion</a></li>
                     </ul>
                 </div>
 

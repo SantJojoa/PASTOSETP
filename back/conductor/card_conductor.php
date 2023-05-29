@@ -87,7 +87,7 @@
             </div>
         </form>
         <button class="subbmit" onclick="toggleInput()">
-                        <span class="btn_text">Actualizar Conductor</span>
+                        <span class="btn_text">Editar Conductor</span>
                         <i class="uil uil-navigator"></i>
                     </button>
         <a class="go_back" href="http://localhost/PASTOSETP/back/conductor/list_conductor.php"">Ir al la Pagina Principal</a>
