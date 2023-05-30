@@ -33,7 +33,23 @@
     <script>
     function toggleInput() {
       var input = document.getElementById("input");
+      var input = document.getElementById("input");
+      var input2 = document.getElementById("input2");
+      var input3 = document.getElementById("input3");
+      var input4 = document.getElementById("input4");
+      var input5 = document.getElementById("input5");
+      var input6 = document.getElementById("input6");
+      var input7 = document.getElementById("input7");
+
+
       input.disabled = !input.disabled;
+      input2.disabled = !input2.disabled;
+      input3.disabled = !input3.disabled;
+      input4.disabled = !input4.disabled;
+      input5.disabled = !input5.disabled;
+      input6.disabled = !input6.disabled;
+      input7.disabled = !input7.disabled;
+
     }
   </script>
 
@@ -58,37 +74,37 @@ $( ".lock" ).click(function() {
                             
                             <div class="input-field">
                                 <label>Codigo de Recorrido:</label>
-                                <input type="text" name="cod" placeholder="Ingrese el Codigo del Recorrido" value="<?php echo $cod; ?>" required> 
+                                <input id="input" type="text" name="cod" placeholder="Ingrese el Codigo del Recorrido" value="<?php echo $cod; ?>" required> 
                             </div>
     
                             <div class="input-field">
                                 <label>Paradero 1:</label>
-                                <input type="text" name="p1" placeholder="Ingrese el Primer Paradero" value="<?php echo $p1; ?>" required> 
+                                <input id="input2" type="text" name="p1" placeholder="Ingrese el Primer Paradero" value="<?php echo $p1; ?>" required> 
                             </div>
     
                             <div class="input-field">
                                 <label>Paradero 2:</label>
-                                <input type="text" name="p2" placeholder="Ingrese el Segundo Paradero" value="<?php echo $p2; ?>" required> 
+                                <input id="input3" type="text" name="p2" placeholder="Ingrese el Segundo Paradero" value="<?php echo $p2; ?>" required> 
                             </div>
     
                             <div class="input-field">
                                 <label>Paradero 3:</label>
-                                <input type="text" name="p3" placeholder="Ingrese el Tercer Paradero" value="<?php echo $p3; ?>" required> 
+                                <input id="input4" type="text" name="p3" placeholder="Ingrese el Tercer Paradero" value="<?php echo $p3; ?>" required> 
                             </div>
     
                             <div class="input-field">
                                 <label>Paradero 4:</label>
-                                <input type="text" name="p4" placeholder="Ingrese el Cuarto Paradero" value="<?php echo $p4; ?>" required> 
+                                <input id="input5" type="text" name="p4" placeholder="Ingrese el Cuarto Paradero" value="<?php echo $p4; ?>" required> 
                             </div>
     
                             <div class="input-field">
                                 <label>Paradero 5:</label>
-                                <input type="text" name="p5" placeholder="Ingrese el Quinto Paradero" value="<?php echo $p5; ?>" required> 
+                                <input id="input6" type="text" name="p5" placeholder="Ingrese el Quinto Paradero" value="<?php echo $p5; ?>" required> 
                             </div>
     
                             <div class="input-field">
                                 <label>Paradero 6:</label>
-                                <input type="text" name="p6" placeholder="Ingrese el Sexto Paradero" value="<?php echo $p6; ?>" required> 
+                                <input id="input7" type="text" name="p6" placeholder="Ingrese el Sexto Paradero" value="<?php echo $p6; ?>" required> 
                             </div>
     
                             

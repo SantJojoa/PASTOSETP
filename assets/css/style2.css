@@ -1,0 +1,49 @@
+table {
+    position: relative;
+    max-width: 900;
+    border-collapse: collapse;
+    padding: 30px;
+    width: 100%;
+    font-size: 14px;
+    font-weight: 400;
+    color: #212121;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.26);
+  }
+  
+  /* Estilos para los encabezados de la tabla */
+  th {
+    background-color: #E54F10;
+    font-weight: 500;
+    text-align: ce;
+    padding: 12px 15px;
+    
+  }
+  
+  /* Estilos para las celdas de la tabla */
+  td {
+    text-align: center;
+    padding: 12px 15px;
+    border-bottom: 1px solid #bdbdbd;
+  }
+  
+  /* Estilos para las filas alternas de la tabla */
+  tr:nth-child(even) {
+    background-color: #f2f2f2;
+  }
+  
+  /* Estilos para cuando se pasa el mouse por encima de una fila */
+  tr:hover {
+    background-color: rgba(0, 0, 0, 0.075);
+    transition: background-color 0.3s ease-in-out;
+  }
+  
+  /* Estilos para cuando se selecciona una fila */
+  tr.selected {
+    background-color: #e1f5fe;
+  }
+  
+  .add_btn{
+    background-color: red;
+  }

@@ -30,7 +30,16 @@
     <script>
     function toggleInput() {
       var input = document.getElementById("input");
+      var input2 = document.getElementById("input2");
+      var input3 = document.getElementById("input3");
+      var input4 = document.getElementById("input4");
+      var input5 = document.getElementById("input5");
+
       input.disabled = !input.disabled;
+      input2.disabled = !input2.disabled;
+      input3.disabled = !input3.disabled;
+      input4.disabled = !input4.disabled;
+      input5.disabled = !input5.disabled;
     }
   </script>
 
@@ -53,27 +62,27 @@
 
                         <div class="input-field">
                             <label>ID Bus:</label>
-                            <input type="text" name="id" placeholder="Ingrese el ID del Bus" value="<?php echo $id_bus; ?> " id="input" required> 
+                            <input id="input" type="text" name="id" placeholder="Ingrese el ID del Bus" value="<?php echo $id_bus; ?> " id="input" required> 
                         </div>
 
                         <div class="input-field">
                             <label>Placa:</label>
-                            <input type="text" name="placa" placeholder="Ingrese la Placa del Bus" value="<?php echo $placa_bus; ?>"  id="input" required> 
+                            <input id="input2" type="text" name="placa" placeholder="Ingrese la Placa del Bus" value="<?php echo $placa_bus; ?>"  id="input" required> 
                         </div>
 
                         <div class="input-field">
                             <label>Rutas:</label>
-                            <input type="text" name="rutas" placeholder="C2,E4,C12" value="<?php echo $ruta_bus; ?>" required> 
+                            <input id="input3" type="text" name="rutas" placeholder="C2,E4,C12" value="<?php echo $ruta_bus; ?>" required> 
                         </div>
 
                         <div class="input-field">
                             <label>Fabricante:</label>
-                            <input type="text" name="fabricante" placeholder="Ingrese el Fabricante del Bus" value="<?php echo $fab_bus; ?>" required> 
+                            <input id="input4" type="text" name="fabricante" placeholder="Ingrese el Fabricante del Bus" value="<?php echo $fab_bus; ?>" required> 
                         </div>
 
                         <div class="input-field">
                             <label>Modelo:</label>
-                            <input type="text" name="modelo" placeholder="Ingrese el Modelo del Bus" value="<?php echo $mod_bus; ?>" required> 
+                            <input id="input5" type="text" name="modelo" placeholder="Ingrese el Modelo del Bus" value="<?php echo $mod_bus; ?>" required> 
                         </div>
                     
                     </div>

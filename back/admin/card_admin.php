@@ -30,9 +30,19 @@
     <script>
     function toggleInput() {
       var input = document.getElementById("input");
-      var input = document.getElementById("input2");
+      var input2 = document.getElementById("input2");
+      var input3 = document.getElementById("input3");
+      var input4 = document.getElementById("input4");
+      var input5 = document.getElementById("input5");
+      var input6 = document.getElementById("input6");
 
       input.disabled = !input.disabled;
+      input2.disabled = !input2.disabled;
+      input3.disabled = !input3.disabled;
+      input4.disabled = !input4.disabled;
+      input5.disabled = !input5.disabled;
+      input6.disabled = !input6.disabled;
+
     }
   </script>
 
@@ -65,22 +75,22 @@ $( ".lock" ).click(function() {
 
                         <div class="input-field">
                             <label>Apellidos:</label>
-                            <input id="input" type="text" name="last_name" placeholder="Ingrese sus Apellidos" value="<?php echo $last_name; ?>" required disabled> 
+                            <input id="input3" type="text" name="last_name" placeholder="Ingrese sus Apellidos" value="<?php echo $last_name; ?>" required disabled> 
                         </div>
 
                         <div class="input-field">
                             <label>Correo Electronico:</label>
-                            <input id="input" type="email" name="email" placeholder="Ingrese su Email" value="<?php echo $email; ?>" required disabled> 
+                            <input id="input4" type="email" name="email" placeholder="Ingrese su Email" value="<?php echo $email; ?>" required disabled> 
                         </div>
 
                         <div class="input-field">
                             <label>Contraseña:</label>
-                            <input id="input" type="password" name="pass" placeholder="********" value="<?php echo $pass; ?>" required  disabled> 
+                            <input id="input5" type="password" name="pass" placeholder="********" value="<?php echo $pass; ?>" required  disabled> 
                         </div>
 
                         <div class="input-field">
                             <label>Numero de Telefono::</label>
-                            <input id="input" type="text" name="phone" placeholder="Ingresa su Telefono" value="<?php echo $phone; ?>"  required disabled> 
+                            <input id="input6" type="text" name="phone" placeholder="Ingresa su Telefono" value="<?php echo $phone; ?>"  required disabled> 
                         </div>
                         
 

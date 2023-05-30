@@ -21,41 +21,29 @@
     
     <form action="search_recorrido.php" method="POST">
     <div class="container"> 
-        <input type="text" name="id" placeholder="Ingrese la id:" required> 
+        <input type="text" name="cod" placeholder="Ingrese el Codigo:" required> 
         <button>Buscar</button><br><br>
         </form>
         
         
     <table class="table">    
         <tr >
-            <th>Id</th>
-            <th>cod</th>
-            <th>P1</th>
-            <th>P2</th>
-            <th>P3</th>
-            <th>P4</th>
-            <th>P5</th>
-            <th>P6</th>
+            <th>Codigo</th>
+            <th></th>
         </tr>
         <?php
             if(!empty($_POST)){
-            $id_recorrido=$_POST['id'];
+            $cod=$_POST['cod'];
 
-            $sql="SELECT * from recorrido WHERE id=$id_recorrido";
+            $sql="SELECT * from recorrido WHERE cod='$cod'";
          
 
             $result=$conn->query($sql);
             if($result->num_rows > 0){
                 while($row=$result->fetch_assoc()){
                     echo"<tr>
-                            <td>".$row['id']."</td>
                             <td>".$row['cod']."</td>
-                            <td>".$row['p1']."</td>
-                            <td>".$row['p2']."</td>
-                            <td>".$row['p3']."</td>
-                            <td>".$row['p4']."</td>
-                            <td>".$row['p5']."</td>
-                            <td>".$row['p6']."</td>
+    
                             <td><a href='edit_recorrido.php?id=".$row['id']."'><img src='../../assets/icons/search.png'  width=30px></a> &nbsp;
                                 <a href='delete_recorrido.php?id_b=".$row['id']."'><img src='../../assets/icons/delete.png' width=30px></a></td>
                         </tr>";

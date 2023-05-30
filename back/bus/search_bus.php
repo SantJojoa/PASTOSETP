@@ -21,7 +21,7 @@
     
     <form action="search_bus.php" method="POST">
     <div class="container"> 
-        <input type="text" name="id" placeholder="Ingrese Id bus:" required> 
+        <input type="text" name="placa" placeholder="Ingrese Placa de Bus:" required> 
         <button>Buscar</button><br><br>
         </form>
         
@@ -29,13 +29,12 @@
         <tr >
             <th>Placa</th>
             <th>Ruta</th>
-            <th>Fabticante</th>
-            <th>Modelo</th>
+            <th></th>
         </tr>
         <?php
              if(!empty($_POST)){
                 $placa=$_POST['placa'];
-                $sql="SELECT * from bus WHERE placa=$placa";
+                $sql="SELECT * from bus WHERE placa='$placa'";
              
 
             
@@ -45,8 +44,6 @@
                     echo"<tr>
                             <td>".$row['placa']."</td>
                             <td>".$row['ruta']."</td>
-                            <td>".$row['fabricante']."</td>
-                            <td>".$row['modelo']."</td>
                             <td><a href='http://localhost/PASTOSETP/back/bus/edit_bus.php?id=".$row['id']."'><img src='../../assets/icons/search.png'  width=30px></a> &nbsp;
                                 <a href='delete_bus.php?id_b=".$row['id']."'><img src='../../assets/icons/delete.png' width=30px></a></td>
                         </tr>";

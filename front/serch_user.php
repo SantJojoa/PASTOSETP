@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="../assets/css/bootstrap.min.css">
     <link rel="stylesheet" href="../assets/css/templatemo.css">
     <link rel="stylesheet" href="../assets/css/custom.css">
+    <link rel="stylesheet" href="../assets/css/style2.css">
 
     <!-- Load fonts style after rendering the layout styles -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;200;300;400;500;700;900&display=swap">
@@ -119,10 +120,58 @@
         <div class="container">
             <div class="row align-items-center py-5">
                 <div class="col-md-8 text-white">
-                    <h1>BUSQUEDA DE RUTAS</h1>
-                    <p>
-                    -----------------------  
-                    </p>
+                    <h1>BUSQUEDA DE RUTAS</h1> 
+                    <h1>--------------------</h1>
+                    <table>
+        <tr >
+            <th>Codigo Ruta</th>
+            <th>Paradero 1</th>
+            <th>Paradero 2</th>
+            <th>Paradero 3</th>
+            <th>Paradero 4</th>
+            <th>Paradero 5</th>
+            <th>Paradero 6</th>
+
+
+
+        </tr>
+        <?php
+            include("../back/config/cnx_db.php"); 
+            $search=$_POST['search'];
+            $sql = "SELECT 
+                        * 
+                    FROM 
+                        recorrido 
+                    WHERE 
+                        p1 LIKE '$search' or 
+                        p2 LIKE '$search' or 
+                        p3 LIKE '$search' or 
+                        p4 LIKE '$search' or 
+                        p5 LIKE '$search' or 
+                        p6 LIKE '$search' 
+            ";
+
+            $result=$conn->query($sql);
+            if($result->num_rows > 0){
+                while($row=$result->fetch_assoc()){
+                    echo"<tr>
+                            
+                            <td>".$row['cod']."</td>
+                            <td>".$row['p1']."</td>
+                            <td>".$row['p2']."</td>
+                            <td>".$row['p3']."</td>
+                            <td>".$row['p4']."</td>
+                            <td>".$row['p4']."</td>
+                            <td>".$row['p6']."</td>
+                        </tr>";
+
+                } 
+                
+            }
+        ?>
+    </table>
+        
+
                 </div>
                 <div class="col-md-4">
                     <img src="../assets/img/Mi_proyecto_1.png" alt="SEPTPASTO" width="120%">

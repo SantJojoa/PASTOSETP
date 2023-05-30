@@ -29,7 +29,15 @@
     <script>
     function toggleInput() {
       var input = document.getElementById("input");
+      var input2 = document.getElementById("input2");
+      var input3 = document.getElementById("input3");
+      var input4 = document.getElementById("input4");
+
       input.disabled = !input.disabled;
+      input2.disabled = !input2.disabled;
+      input3.disabled = !input3.disabled;
+      input4.disabled = !input4.disabled;
+
     }
   </script>
 
@@ -56,22 +64,22 @@
 
                         <div class="input-field">
                             <label>Documento de Identificacion:</label>
-                            <input type="text" name="n_id" placeholder="Ingrese su Cedula" value="<?php echo $n_id; ?>" required> 
+                            <input id="input" type="text" name="n_id" placeholder="Ingrese su Cedula" value="<?php echo $n_id; ?>" required> 
                        </div>
 
                         <div class="input-field">
                             <label>Nombre(s):</label>
-                            <input type="text" name="name" placeholder="Ingrese su Nombre" value="<?php echo $name; ?>" required> 
+                            <input id="input2" type="text" name="name" placeholder="Ingrese su Nombre" value="<?php echo $name; ?>" required> 
                         </div>
 
                         <div class="input-field">
                             <label>Apellidos:</label>
-                            <input type="text" name="l_name" placeholder="Ingrese sus Apellidos" value="<?php echo $last_name; ?>" required> 
+                            <input id="input3" type="text" name="l_name" placeholder="Ingrese sus Apellidos" value="<?php echo $last_name; ?>" required> 
                         </div>
 
                         <div class="input-field">
                             <label>Edad:</label>
-                            <input type="number" name="age" placeholder="Ingrese su Edad" value="<?php echo $age; ?>" required> 
+                            <input id="input4" type="number" name="age" placeholder="Ingrese su Edad" value="<?php echo $age; ?>" required> 
                         </div>
 
                         

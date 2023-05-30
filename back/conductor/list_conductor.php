@@ -20,11 +20,10 @@
     <div class="container">
         <table>
             <tr >
-                <th>ID</th>
+                <th>Cedula</th>
                 <th>Nombre</th>
                 <th>Apellido </th>
-                <th>Edad</th>
-                <th>..</th>
+                <th> </th>
             </tr>
     <?php
         $sql="SELECT * from conductor";
@@ -35,7 +34,6 @@
                             <td>".$row['n_id']."</td>
                             <td>".$row['name']."</td>
                             <td>".$row['last_name']."</td>
-                            <td>".$row['age']."</td>
                             <td><a href='card_conductor.php?id=".$row['id']."'><img src='../../assets/icons/search.png'  width=30px></a> &nbsp;
                                 <a href='delete_conductor.php?id_b=".$row['id']."'><img src='../../assets/icons/delete.png' width=30px></a></td>
                         </tr>";

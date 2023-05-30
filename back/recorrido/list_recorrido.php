@@ -22,14 +22,10 @@
     <div class="container">
     <table>
         <tr >
-            <th>Id</th>
-            <th>cod</th>
-            <th>P1</th>
-            <th>P2</th>
-            <th>P3</th>
-            <th>P4</th>
-            <th>P5</th>
-            <th>P6</th>
+            
+            <th>Codigo</th>
+            <th></th>
+
         </tr>
         <?php
             $sql="SELECT * from recorrido";
@@ -37,14 +33,9 @@
             if($result->num_rows > 0){
                 while($row=$result->fetch_assoc()){
                     echo"<tr>
-                            <td>".$row['id']."</td>
+                           
                             <td>".$row['cod']."</td>
-                            <td>".$row['p1']."</td>
-                            <td>".$row['p2']."</td>
-                            <td>".$row['p3']."</td>
-                            <td>".$row['p4']."</td>
-                            <td>".$row['p5']."</td>
-                            <td>".$row['p6']."</td>
+
                             <td><a href='card_recorrido.php?id=".$row['id']."'><img src='../../assets/icons/search.png'  width=30px></a> &nbsp;
                                 <a href='delete_recorrido.php?id_b=".$row['id']."'><img src='../../assets/icons/delete.png' width=30px></a></td>
                         </tr>";

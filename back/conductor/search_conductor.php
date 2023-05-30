@@ -21,22 +21,22 @@
     
     <form action="search_conductor.php" method="POST">
     <div class="container"> 
-        <input type="text" name="id" placeholder="Ingrese id:" required> 
+        <input type="text" name="ced" placeholder="Ingrese la Cedula:" required> 
         <button>Buscar</button><br><br>
         </form>
         
         
     <table class="table">    
         <tr >
-            <th>ID</th>
+            <th>Cedula</th>
             <th>Nombre</th>
             <th>Apellido</th>
-            <th>Edad</th>
+            <th></th>
         </tr>
         <?php
              if(!empty($_POST)){
-                $id_conductor=$_POST['id'];
-                $sql="SELECT * from conductor WHERE id=$id_conductor";
+                $ced=$_POST['ced'];
+                $sql="SELECT * from conductor WHERE n_id='$ced'";
              
 
             
@@ -47,7 +47,7 @@
                             <td>".$row['n_id']."</td>
                             <td>".$row['name']."</td>
                             <td>".$row['last_name']."</td>
-                            <td>".$row['age']."</td>
+                        
                             <td><a href='http://localhost/PASTOSETP/back/conductor/edit_conductor.php?id=".$row['id']."'><img src='../../assets/icons/search.png'  width=30px></a> &nbsp;
                                 <a href='delete_conductor.php?id_b=".$row['id']."'><img src='../../assets/icons/delete.png' width=30px></a></td>
                         </tr>";

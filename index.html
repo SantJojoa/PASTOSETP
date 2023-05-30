@@ -64,10 +64,10 @@
                             <a class="nav-link" href="front/login.php">Administrador</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-icon d-none d-lg-inline" data-bs-toggle="modal" data-bs-target="#templatemo_search">
-                                
-                                <i class="fa fa-fw fa-search text-dark mr-2" >Buscar Ruta</i>
-                               <!--Buscar Ruta-->
+                            <form action="http://localhost/pastosetp/front/serch_user.php" method="post">
+                                <input type="text" placeholder="Ingrese su destino" name="search">
+                                <button type="submit" >Buscar</button>
+                            </form>
                             </a>
                         </li>
                     </ul>
@@ -84,9 +84,9 @@
             <div class="w-100 pt-1 mb-5 text-right">
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
-            <form action="" method="get" class="modal-content modal-body border-0 p-0">
+            <form action="http://localhost/pastosetp/front/serch_user.php" method="get" class="modal-content modal-body border-0 p-0">
                 <div class="input-group mb-2">
-                    <input type="text" class="form-control" id="inputModalSearch" name="q" placeholder="Ingresa tu destino">
+                    <input type="text" class="form-control" id="inputModalSearch" name="search" placeholder="Ingresa tu destino" >
                     <button type="submit" class="input-group-text bg-success text-light">
                             <a class="nav-icon d-none d-lg-inline text-white" href="front/serch_user.php">
                                 Buscar

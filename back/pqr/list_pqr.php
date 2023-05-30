@@ -24,13 +24,13 @@
     <table class="table">
         <tr >
             <th>Id</th>
-            <th>Cedula</th>
-            <th>Cliente</th>
-            <th>Bus</th>
+            <th>Cedula Cliente</th>
+            <th>Nombre Cliente</th>
+            <th>Placa Bus</th>
             <th>Asunto</th>
             <th>Detalles</th>
-            <th>Contacto</th>
-            <th>--</th>
+            <th>Contacto Cliente</th>
+            
         </tr>
         <?php
             $sql="SELECT * from pqr";
