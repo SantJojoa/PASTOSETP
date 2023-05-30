@@ -35,7 +35,7 @@
             if($result->num_rows > 0){
                 while($row=$result->fetch_assoc()){
                     echo"<tr>
-                            <td>".$row['n_id']."</td>
+                            <td>".$row['n_id']." </td>
                             <td>".$row['name']."</td>
                             <td>".$row['last_name']."</td>
                             <td><a href='http://localhost/PASTOSETP/back/admin/card_admin.php?id=".$row['id']."'><img src='../../assets/icons/search.png'  width=30px></a> &nbsp;

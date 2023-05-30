@@ -21,6 +21,7 @@
     
     <form action="search_conductor.php" method="POST">
     <div class="container"> 
+    <header>Buscar Conductor</header> <br>
         <input type="text" name="ced" placeholder="Ingrese la Cedula:" required> 
         <button>Buscar</button><br><br>
         </form>

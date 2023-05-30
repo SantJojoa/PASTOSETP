@@ -104,7 +104,7 @@ $( ".lock" ).click(function() {
 
                 </div>
             </div>
-            <button class="" onclick="toggleInput()">
+            <button class="subbmit" onclick="toggleInput()">
                         <span class="btn_text">Editar Administrador</span> 
                         <i class="uil uil-navigator"></i>
                     </button>

@@ -87,6 +87,7 @@
           <center><button class="login" >Ingresar</button></center>
           <div class="footer"><s>
         </form>
+
         <center><a href="http://localhost/pastosetp/index.html">Volver</a></center>
 
 </body>

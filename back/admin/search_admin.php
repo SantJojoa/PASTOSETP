@@ -22,6 +22,8 @@
     
     <form action="search_admin.php" method="POST">
     <div class="container"> 
+        <header>Buscar Administrador</header> <br>
+
         <input type="text" name="id" placeholder="Ingrese la cedula:" required> 
         <button>Buscar</button><br><br>
         </form>

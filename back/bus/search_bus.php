@@ -21,6 +21,7 @@
     
     <form action="search_bus.php" method="POST">
     <div class="container"> 
+    <header>Buscar Bus</header> <br>
         <input type="text" name="placa" placeholder="Ingrese Placa de Bus:" required> 
         <button>Buscar</button><br><br>
         </form>

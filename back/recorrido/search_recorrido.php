@@ -21,6 +21,7 @@
     
     <form action="search_recorrido.php" method="POST">
     <div class="container"> 
+        <header>Buscar Recorrido</header> <br>
         <input type="text" name="cod" placeholder="Ingrese el Codigo:" required> 
         <button>Buscar</button><br><br>
         </form>
