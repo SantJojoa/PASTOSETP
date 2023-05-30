@@ -53,12 +53,12 @@
 
                         <div class="input-field">
                             <label>ID Bus:</label>
-                            <input type="text" name="id" placeholder="Ingrese el ID del Bus" value="<?php echo $id_bus; ?> " required> 
+                            <input type="text" name="id" placeholder="Ingrese el ID del Bus" value="<?php echo $id_bus; ?> " id="input" required> 
                         </div>
 
                         <div class="input-field">
                             <label>Placa:</label>
-                            <input type="text" name="placa" placeholder="Ingrese la Placa del Bus" value="<?php echo $placa_bus; ?>" required> 
+                            <input type="text" name="placa" placeholder="Ingrese la Placa del Bus" value="<?php echo $placa_bus; ?>"  id="input" required> 
                         </div>
 
                         <div class="input-field">

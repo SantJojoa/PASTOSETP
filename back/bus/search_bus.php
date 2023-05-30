@@ -34,8 +34,8 @@
         </tr>
         <?php
              if(!empty($_POST)){
-                $id=$_POST['id'];
-                $sql="SELECT * from bus WHERE id=$id";
+                $placa=$_POST['placa'];
+                $sql="SELECT * from bus WHERE placa=$placa";
              
 
             

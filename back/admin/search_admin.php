@@ -32,9 +32,7 @@
             <th>Identificacion</th>
             <th>First name</th>
             <th>Last name</th>
-            <th>Email</th>
-            <th>Paswoord</th>
-            <th>Telefono</th>
+            <th>    </th>
         </tr>
         <?php
              if(!empty($_POST)){
@@ -50,9 +48,7 @@
                             <td>".$row['n_id']."</td>
                             <td>".$row['name']."</td>
                             <td>".$row['last_name']."</td>
-                            <td>".$row['email']."</td>
-                            <td>".$row['password']."</td>
-                            <td>".$row['phone']."</td>
+
                             <td><a href='http://localhost/PASTOSETP/back/admin/edit_admin.php?id=".$row['id']."'><img src='../../assets/icons/search.png'  width=30px></a> &nbsp;
                                 <a href='delete_admin.php?id_b=".$row['id']."'><img src='../../assets/icons/delete.png' width=30px></a></td>
                         </tr>";

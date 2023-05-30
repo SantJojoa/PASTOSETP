@@ -23,9 +23,7 @@
         <tr class="files">
             <th class="files">Placa</th>
             <th class="files">Ruta</th>
-            <th class="files">Fabricante</th>
-            <th class="files">Modelo</th>
-            <th class="files">..</th>
+            <th></th>
         </tr>
         <?php
             $sql="SELECT * from bus";
@@ -35,8 +33,7 @@
                     echo"<tr>
                             <td>".$row['placa']."</td>
                             <td>".$row['ruta']."</td>
-                            <td>".$row['fabricante']."</td>
-                            <td>".$row['modelo']."</td>
+                    
                             <td><a href='card_bus.php?id=".$row['id']."'><img src='../../assets/icons/search.png'  width=30px></a> &nbsp;
                                 <a href='delete_bus.php?id_b=".$row['id']."'><img src='../../assets/icons/delete.png' width=30px></a></td>
                         </tr>";

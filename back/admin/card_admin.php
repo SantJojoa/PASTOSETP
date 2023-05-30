@@ -30,6 +30,8 @@
     <script>
     function toggleInput() {
       var input = document.getElementById("input");
+      var input = document.getElementById("input2");
+
       input.disabled = !input.disabled;
     }
   </script>
@@ -58,27 +60,27 @@ $( ".lock" ).click(function() {
 
                         <div class="input-field">
                             <label>Nombre(s):</label>
-                            <input type="text" name="name" placeholder="Ingrese su Nombre" value="<?php echo $name; ?>" required readonly="yes"> 
+                            <input id="input2" type="text" name="name" placeholder="Ingrese su Nombre" value="<?php echo $name; ?>" required disabled> 
                         </div>
 
                         <div class="input-field">
                             <label>Apellidos:</label>
-                            <input type="text" name="last_name" placeholder="Ingrese sus Apellidos" value="<?php echo $last_name; ?>" required readonly="yes"> 
+                            <input id="input" type="text" name="last_name" placeholder="Ingrese sus Apellidos" value="<?php echo $last_name; ?>" required disabled> 
                         </div>
 
                         <div class="input-field">
                             <label>Correo Electronico:</label>
-                            <input type="email" name="email" placeholder="Ingrese su Email" value="<?php echo $email; ?>" required readonly="yes"> 
+                            <input id="input" type="email" name="email" placeholder="Ingrese su Email" value="<?php echo $email; ?>" required disabled> 
                         </div>
 
                         <div class="input-field">
                             <label>Contraseña:</label>
-                            <input type="password" name="pass" placeholder="********" value="<?php echo $pass; ?>" required readonly="yes"> 
+                            <input id="input" type="password" name="pass" placeholder="********" value="<?php echo $pass; ?>" required  disabled> 
                         </div>
 
                         <div class="input-field">
                             <label>Numero de Telefono::</label>
-                            <input type="text" name="phone" placeholder="Ingresa su Telefono" value="<?php echo $phone; ?>"  required readonly="yes"> 
+                            <input id="input" type="text" name="phone" placeholder="Ingresa su Telefono" value="<?php echo $phone; ?>"  required disabled> 
                         </div>
                         
 
@@ -93,10 +95,10 @@ $( ".lock" ).click(function() {
                 </div>
             </div>
             <button class="" onclick="toggleInput()">
-                        <span class="btn_text">Editar Administrador</span>
+                        <span class="btn_text">Editar Administrador</span> 
                         <i class="uil uil-navigator"></i>
                     </button>
-
+                | |
         
         <a class="go_back" href="http://localhost/PASTOSETP/back/admin/list_admin.php">Ir al la Pagina Principal</a>
     </div>

@@ -20,7 +20,8 @@
 </head>
 <body> 
     <div class="container">
-        
+
+    <header>Administradores</header> <br>
     <table class="table">
         <tr >
             <th>Cedula</th>
